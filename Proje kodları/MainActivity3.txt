@@ -1,0 +1,71 @@
+package com.example.finalodevi
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.*
+import androidx.fragment.app.Fragment
+import com.google.android.material.snackbar.Snackbar
+
+class MainActivity3 : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main3)
+
+        var button3=findViewById<Button>(R.id.button3)
+        var sureler=arrayOf("2 sn,2.5sn,3sn,3.5sn,4sn")
+	
+	var spinner=findViewById<Spinner>(R.id.spinner)
+	
+
+
+        var adapter=ArrayAdapter(this,android.R.layout.simple_dropdown_item_1line,sureler)
+
+	spinner.adapter=adapter
+
+
+        fun fragmentcagir2(fragment: Fragment) {
+            var gecis2 = supportFragmentManager.beginTransaction()
+            gecis2.replace(R.id.fragmentContainerView3, fragment)
+            gecis2.commit()
+
+
+
+            button3.setOnClickListener {
+                var acilirmenu = PopupMenu(this, button3)
+                acilirmenu.menuInflater.inflate(R.menu.popupmenu, acilirmenu.menu)
+                acilirmenu.setOnMenuItemClickListener { i ->
+                    when (i.itemId) {
+                        R.id.Rgb -> {
+                            fragmentcagir2(fragment2())
+                            true}
+                        R.id.SnackBar ->{
+
+
+                        true}
+                        R.id.Cikisyap ->{
+
+
+                           true}
+
+                          else->false
+                        }
+
+
+                    }
+
+
+                }
+
+            }
+        }
+
+    fun fragmentcagir2(fragment: Fragment) {
+        var gecis2 = supportFragmentManager.beginTransaction()
+        gecis2.replace(R.id.fragmentContainerView3, fragment)
+        gecis2.commit()
+    }
+
+    }
+
+
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00bcd4"
+    tools:context=".fragment2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="720dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="220dp"
+            android:textSize="36dp"
+            android:textColor="#4CAF50"
+            android:text="Green" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="70dp"
+            android:text="Blue"
+            android:textColor="#3F51B5"
+            android:textSize="36dp" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar5"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="175dp"
+        android:max="12"
+        android:progress="0"
+        android:progressDrawable="@android:drawable/ic_media_play"
+        android:thumb="@android:drawable/btn_default_small"
+        android:thumbTint="#DA1717" />
+
+    <SeekBar
+        android:id="@+id/seekBar6"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="275dp"
+        android:max="12"
+        android:progress="9"
+        android:progressDrawable="@android:drawable/ic_media_play"
+        android:thumb="@android:drawable/btn_default_small"
+        android:thumbTint="#4CAF50" />
+
+    <SeekBar
+        android:id="@+id/seekBar7"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="375dp"
+        android:max="12"
+        android:progress="10"
+        android:progressDrawable="@android:drawable/ic_media_play"
+        android:thumb="@android:drawable/btn_default_small"
+        android:thumbTint="#3F51B5" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:text="Red"
+        android:layout_marginTop="75dp"
+        android:textColor="#E10D0D"
+        android:textSize="36dp" />
+
+</FrameLayout>
